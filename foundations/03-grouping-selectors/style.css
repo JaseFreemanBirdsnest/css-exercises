@@ -1,0 +1,17 @@
+button{
+    width: 250px;
+    height: 40px;
+}
+
+.me{
+    color: white;
+    background-color: black;
+}
+
+.nome{
+    background-color: yellow;
+}
+.me,.nome{
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
