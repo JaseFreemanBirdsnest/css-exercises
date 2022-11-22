@@ -1,5 +1,6 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 img {
@@ -8,8 +9,25 @@ img {
 }
 
 .title {
+  /* display:flex; - This was not required */ 
+  justify-content: center; /* If text-align was in the header, this would not have been needed */
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.items{ /* Called container in solution */
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item{ /* Called info in solution */
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+ /* text-align: center;  This could have been put into the body */
 }
 
 /* do not edit this footer */
