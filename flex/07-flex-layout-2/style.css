@@ -37,13 +37,14 @@ body {
   padding-left: 16px;
   }
 
-  .sbandmeat {
+  .sbandmeat { /* Class body used in solution*/
     display: flex;
+    flex: 1;
     }
 
   .meat {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; not needed*/
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 16px;
@@ -51,14 +52,15 @@ body {
 
   .sidebar {
     display: flex;
-    width: 400px;
+    /* width: 400px; this is incorrect, the below line is better used*/
+    flex-shrink: 0;
   }
 
   a {
     font-size: 24px;
     color: white;
     text-decoration: none;
-    padding: 16px;    
+    /* padding: 16px; Not needed as this is the same as in .card    */
   }
   
   li {
@@ -75,9 +77,16 @@ body {
 }
 
   .footer {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; This is not needed*/
     display: flex;
     justify-content: center;
     align-items: center;
 
+  }
+
+  /* Additions from exercise solutions */
+
+  body {
+    display: flex;
+    flex-direction: column;
   }
